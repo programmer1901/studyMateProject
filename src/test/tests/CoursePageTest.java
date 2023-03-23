@@ -103,51 +103,7 @@ public class CoursePageTest {
         coursePage.listOfCourses.get(coursePage.listOfCourses.size()-1).click();
         coursePage.deleteTeacherFromCourse.click();
 
-//        coursePage.threeDotsBtn.get(coursePage.listOfCourses.size() - 1).click();
-//        coursePage.assignTeacherOption.get(coursePage.listOfCourses.size() - 1).click();
-//        coursePage.assignTeacherBtn.click();
-//        Flow.wait(1000);
-//
-//        String teacherName = "Ilgiz Babanov";
-//        for (WebElement teacher : coursePage.listOfTeachers){
-//            if(teacher.getText().equals(teacherName)){
-//                System.out.println(teacher.getText());
-//                teacher.click();
-//            }
-//        }
-//
-//        Actions action = new Actions(Driver.getDriver());
-//        action.sendKeys(Keys.ESCAPE).build().perform();
-//
-//        coursePage.saveBtnAssignTeacher.click();
 
-
-
-//        Driver.getDriver().get(Config.getValue("studyMateUrl"));
-//        loginPage.login(Config.getValue("studyMateLoginEmail"),Config.getValue("studyMateLoginPassword"));
-//        coursePage.coursesTab.click();
-//        coursePage.threeDotsBtn.get(0).click();
-//        coursePage.threeDotBtnOptions.get(0).click();
-//        coursePage.assignTeacherBtn.click();
-//        coursePage.saveBtnAssignTeacher.click();
-//        Flow.wait(5000);
-//        adminPage.adminLogout();
-//        loginPage.login("ilgizbabanov@gmail.com", "123123");
-//        Flow.wait(2000);
-//        Assert.assertTrue(coursePage.noCourseMessageOnTeacherPage.getText(),true);
-
-
-        // Blockers:
-        // 1) How to choose exact course (by name?) and click on three dots button?
-        // 2) How to select exact teacher to assign it to the course?
-
-        //title of the first course:
-        // header/../div/div/div/div/div[1]/div[2]/div/div
-
-        // Verify if new assigned teacher to the course is assigned.
-        //       String expectedMessage = "Instructors successfully added to the course";
-        //       String actualMessage = coursePage.assignTeacherConfirmationMessage.getText();
-        //       Assert.assertEquals(expectedMessage,actualMessage);
 
     }
 
