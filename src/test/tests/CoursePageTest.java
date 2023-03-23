@@ -87,26 +87,9 @@ public class CoursePageTest {
         Driver.quitBrowser();
     }
 
-    @Test
-    public void removeTeacherFromCourseVerification(){
-        Driver.getDriver().get(Config.getValue("studyMateUrl"));
-        loginPage.login(Config.getValue("studyMateLoginEmail"), Config.getValue("studyMateLoginPassword"));
-        coursePage.coursesTab.click();
-        Pagination.getNumberOfItems();
-        String totalNumberOfCourses = Integer.toString(Pagination.getNumberOfItems());
-        coursePage.paginationInput.sendKeys(Keys.BACK_SPACE);
-        coursePage.paginationInput.sendKeys(totalNumberOfCourses);
-        coursePage.paginationInput.sendKeys(Keys.ENTER);
-        Flow.scrollDown(1000);
-        Flow.wait(500);
-
-        coursePage.listOfCourses.get(coursePage.listOfCourses.size()-1).click();
-        coursePage.deleteTeacherFromCourse.click();
-
-
 
     }
 
-}
+
 
 
